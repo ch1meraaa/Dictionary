@@ -1,0 +1,72 @@
+.chip {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: var(--greyLight-2);
+    
+}
+.chip__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    margin: 0 0 0 0.2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--primary);
+    display: flex;
+}
+.chip p {
+    font-size: 1rem;
+    
+    color: var(--primary-dark);
+}
+.chip__close {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 0.5rem;
+    display: flex;
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+    cursor: pointer;
+}
+.offline {
+    display: none;
+}
+.upload {
+    display: none;
+}
+
+.alert {
+    display: none;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+.chip.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}

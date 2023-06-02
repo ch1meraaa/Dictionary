@@ -1,0 +1,21 @@
+
+.info-block {
+	max-width: 700px;
+		padding: 3px;
+		top: 20px;
+		border-radius: 6px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 1.5em;
+		font-family: inherit;
+		display: none; 
+		box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+		transition: 0.3s ease;	
+		color: var(--greyDark);
+		cursor: default;
+	
+	}
+.info-block:hover {
+		color: var(--primary);
+	}
